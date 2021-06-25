@@ -14,7 +14,7 @@
 
          setTimeout(() => {
              callback.call(this)
-         }, 100)
+         }, 1000)
      }
 
      loadModule(name) {
