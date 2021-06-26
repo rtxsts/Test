@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    border: solid 1px red;
+    overflow: hidden;
+    background: url(../image/background.png) center center;
+    background-size: cover;
+}
+
+
+/* tep栏*/
+
+.tep {
+    width: 100%;
+    height: 6rem;
+    background: rgb(46, 46, 46);
+    color: #Ffffff;
+    display: flex;
+    position: relative;
+}
+
+.tep-write {
+    color: inherit;
+    font-size: 3rem;
+    line-height: 6rem;
+    height: 6rem;
+    padding-left: 15rem;
+}
+
+.tep .tep-lanber ul {
+    display: flex;
+    font-size: 2rem;
+    height: 100%;
+    margin-left: 5rem;
+}
+
+.tep .tep-lanber ul>li {
+    padding: 0 3rem;
+    height: 100%;
+    line-height: 6rem;
+}
+
+.tep .tep-lanber ul>li>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tep-shou {
+    position: absolute;
+    margin-right: 15rem;
+    height: 100%;
+    right: 0;
+}
+
+.tep-shou-xin {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.tep-shou-xin>.tep-shou-back {
+    height: 2.7rem;
+    background-color: #Ffffff;
+    background-color: black;
+    padding: 0 1rem;
+}
+
+.tep-shou-xin>.tep-shou-back>img {
+    height: 70%;
+    margin-top: 15%;
+}
+
+.tep-shou-xin>input {
+    height: 2.5rem;
+    width: 15rem;
+    background: black;
+    outline: none;
+    border: solid 1px black;
+    color: #Ffffff;
+    font-size: 1.5rem;
+}
+
+.back {
+    width: 100%;
+    height: calc(100vh - 6rem);
+}
+
+.back .back-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back .back-text-write {
+    color: rgb(232, 232, 232);
+    font-size: 10rem;
+    text-align: center;
+}
+
+.back .back-text-p1,
+.back .back-text-p2 {
+    color: rgb(212, 212, 212);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.back .back-button {
+    color: rgb(212, 212, 212);
+    font-size: 2rem;
+    border: solid 1px rgb(255, 94, 0);
+    width: 13rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.back .back-button:hover {
+    background: rgb(253, 119, 42);
+    color: #Ffffff;
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 15px;
+    }
+    .back .back-text-write {
+        font-size: 10rem;
+    }
+    .back .back-text-p1,
+    .back .back-text-p2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    html {
+        font-size: 11px;
+    }
+    .back .back-text-write {
+        font-size: 10rem;
+    }
+    .back .back-text-p1,
+    .back .back-text-p2 {
+        font-size: 1.5rem;
+    }
+    .tep-shou {
+        margin-right: 5rem;
+    }
+    .tep-write {
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+    .back .back-text-write {
+        font-size: 10rem;
+    }
+    .back .back-text-p1,
+    .back .back-text-p2 {
+        font-size: 1.5rem;
+    }
+    .tep-shou {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 8px;
+    }
+    .back .back-text-write {
+        font-size: 5rem;
+    }
+    .back .back-text-p1,
+    .back .back-text-p2 {
+        font-size: 1.1rem;
+    }
+}
