@@ -6,7 +6,6 @@
 
 body {
     height: 100vh;
-    border: solid 1px red;
     overflow: hidden;
     background: url(../image/background.png) center center;
     background-size: cover;
