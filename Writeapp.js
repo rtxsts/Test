@@ -22,7 +22,7 @@ class Write {
         window.onload = function() {
             setTimeout(() => {
                 Callback();
-            }, 100)
+            }, 10)
         }
     }
 
